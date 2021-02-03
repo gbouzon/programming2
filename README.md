@@ -29,9 +29,9 @@ Repository for projects, assignments and labs in programming 2 course.
 # Week 3
 
 <p> 1. Lab2: <br>
-    Contains exercises done in Niloufar's lab (Airplane project). Javadoc *properly* added.
+    Contains exercises done in Niloufar's lab (Airplane project). Javadoc _properly_ added.
 </p>
 
 <p> 2. Assignment 1: <br>
-    Contains my solution for Yi's assignment 1 (Adress, Student, number stuff).
+    Contains my solution for Yi's assignment 1 (Address, Student, number stuff).
 </p>
