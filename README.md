@@ -25,3 +25,13 @@ Repository for projects, assignments and labs in programming 2 course.
 <p> 1. Arrays: <br>
     Contains array exercises done in Niloufar's lab and Yi's lab. Javadoc added.
 </p>
+
+# Week 3
+
+<p> 1. Lab2: <br>
+    Contains exercises done in Niloufar's lab (Airplane project). Javadoc *properly* added.
+</p>
+
+<p> 2. Assignment 1: <br>
+    Contains my solution for Yi's assignment 1 (Adress, Student, number stuff).
+</p>
