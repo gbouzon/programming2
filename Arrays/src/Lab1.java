@@ -1,6 +1,10 @@
 import java.util.Arrays;
 import java.util.Scanner;
-
+/**
+ * 
+ * @author ga
+ *
+ */
 public class Lab1 {
 	
 	/**
@@ -75,6 +79,35 @@ public class Lab1 {
 			array[i] = copyArray[(length-1)-i];
 		}
 		return array;
+	}
+	
+	/**
+	 * Appends a new value to a double array
+	 * @param array, the input array
+	 * @param value, the value to be inserted in the array
+	 */
+	public static void appendValue(double[] nums, double value) {
+		double[] numsCopy = Arrays.copyOf(nums, nums.length + 1);
+		numsCopy[numsCopy.length - 1] = value;
+		
+		nums = numsCopy; 			//shallow copy
+	}
+	
+	/**
+	 * Convert the number of vowels in a string, you should convert the string
+	 * to a char array first and then do the count
+	 * @param str, the input string
+	 * @return the number of vowels in the string
+	 */
+	public static int countVowels(String str) {
+		int count = 0;
+		str = str.toLowerCase();
+		
+		for(char c : str.toCharArray())
+			if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') 
+				count++;
+		
+		return count;
 	}
 
 	public static void main(String[] args) {
