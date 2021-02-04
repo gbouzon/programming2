@@ -35,3 +35,7 @@ Repository for projects, assignments and labs in programming 2 course.
 <p> 2. Assignment 1: <br>
     Contains my solution for Yi's assignment 1 (Address, Student, number stuff).
 </p>
+
+<p> 3. Lab3: <br>
+    Contains Niloufar's code on Q1 (a,b,c) of Lab 3 pdf (on 2d arrays) and my solution for Q3 (square sum).
+</p>
