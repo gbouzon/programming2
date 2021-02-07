@@ -23,19 +23,24 @@ Repository for projects, assignments and labs in programming 2 course.
 # Week 2
 
 <p> 1. Arrays: <br>
-    Contains array exercises done in Niloufar's lab and Yi's lab. Javadoc added.
+    Contains array exercises done in Niloufar's lab 1 and Yi's lab (package <i>arraysExercise</i>). <br>
+    Javadoc added.
 </p>
 
 # Week 3
 
-<p> 1. Lab2: <br>
-    Contains exercises done in Niloufar's lab (Airplane project). Javadoc <i>properly</i> added.
+<p> 1. Arrays: <br>
+    Package <i>lab2</i> contains exercises done in Niloufar's lab 2 (Airplane project). <br>
+    Package <i>arraysExercise</i> contains exercises done in Niloufar's lab 3 (2d arrays and square sum). <br>
+    Package <i>lab4</i> contains exercises done in Niloufar's lab 4 (Magic Squares). <br>
+    Package <i>lab5</i> contains exercises done in Niloufar's lab 5 (GPS, Waypoint). 
 </p>
 
 <p> 2. Assignment 1: <br>
     Contains my solution for Yi's assignment 1 (Address, Student, number stuff).
 </p>
 
-<p> 3. Lab3: <br>
-    Contains Niloufar's code on Q1 (a,b,c) of Lab 3 pdf (on 2d arrays) and my solution for Q3 (square sum).
+<p> 3. YiArrayExercise: <br>
+    Package <i>singleDimensionalArrays</i> contains exercises done during Yi's lab (Face, Face_enum). <br>
+    Package <i>hotel</i> contains exercises done during Yi's lab (Clock, Lobby). <br>
 </p>
