@@ -23,8 +23,7 @@ Repository for projects, assignments and labs in programming 2 course.
 # Week 2
 
 <p> 1. Arrays: <br>
-    Contains array exercises done in Niloufar's lab 1 and Yi's lab (package <i>arraysExercise</i>). <br>
-    Javadoc added.
+    Package <i>arraysExercise</i> contains exercises done in Niloufar's lab 1 and Yi's lab. <br>
 </p>
 
 # Week 3
