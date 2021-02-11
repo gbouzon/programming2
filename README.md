@@ -23,16 +23,16 @@ Repository for projects, assignments and labs in programming 2 course.
 # Week 2
 
 <p> 1. Arrays: <br>
-    Package <i>arraysExercise</i> contains exercises done in Niloufar's lab 1 and Yi's lab. <br>
+    Package <b>arraysExercise</b> contains exercises done in Niloufar's lab 1 and Yi's lab. <br>
 </p>
 
 # Week 3
 
 <p> 1. Arrays: <br>
-    Package <i>lab2</i> contains exercises done in Niloufar's lab 2 (Airplane project). <br>
-    Package <i>arraysExercise</i> contains exercises done in Niloufar's lab 3 (2d arrays and square sum). <br>
-    Package <i>lab4</i> contains exercises done in Niloufar's lab 4 (Magic Squares). <br>
-    Package <i>lab5</i> contains exercises done in Niloufar's lab 5 (GPS, Waypoint). 
+    Package <b>lab2</b> contains exercises done in Niloufar's lab 2 (Airplane project). <br>
+    Package <b>arraysExercise</b> contains exercises done in Niloufar's lab 3 (2d arrays and square sum). <br>
+    Package <b>lab4</b> contains exercises done in Niloufar's lab 4 (Magic Squares). <br>
+    Package <b>lab5</b> contains exercises done in Niloufar's lab 5 (GPS, Waypoint). 
 </p>
 
 <p> 2. YiAssignment1: <br>
@@ -40,8 +40,8 @@ Repository for projects, assignments and labs in programming 2 course.
 </p>
 
 <p> 3. YiArrayExercise: <br>
-    Package <i>singleDimensionalArrays</i> contains exercises done during Yi's lab (Face, Face_enum). <br>
-    Package <i>hotel</i> contains exercises done during Yi's lab (Clock, Lobby). <br>
+    Package <b>singleDimensionalArrays</b> contains exercises done during Yi's lab (Face, Face_enum). <br>
+    Package <b>hotel</b> contains exercises done during Yi's lab (Clock, Lobby). <br>
 </p>
 
 # Week 4
@@ -49,7 +49,7 @@ Repository for projects, assignments and labs in programming 2 course.
 <p> 1. Inheritance: <br>
     Package <b>lab6</b> contains exercises done in Niloufar's lab 6, Q1 (Payment project). <br>
     Package <b>lab6_2</b> contains exercises done in Niloufar's lab 6, Q2 (Document project). <br>
-    Package <i>lab7</i> contains exercises done in Niloufar's lab 7, Q1 (Alien project). <br>
-    Package <i>lab7_2</i> contains exercises done in Niloufar's lab 7, Q2 (Vehicle project). 
+    Package <b>lab7</b> contains exercises done in Niloufar's lab 7, Q1 (Alien project). <br>
+    Package <b>lab7_2</b> contains exercises done in Niloufar's lab 7, Q2 (Vehicle project). 
 </p>
 
