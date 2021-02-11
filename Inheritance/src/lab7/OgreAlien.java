@@ -54,8 +54,7 @@ public class OgreAlien extends Alien {
 	return super.toString() + str;
     }
     
-    // getters and setters
-    
+    //getter
     public int getDamage() {
 	return damage;
     }

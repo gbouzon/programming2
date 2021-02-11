@@ -49,16 +49,13 @@ public class SnakeAlien extends Alien {
 	String str = "";
 	
 	str += String.format("%-20s: %d\n", "Damage Inflicted", damage);
-	str += String.format("%-20s: %s\n", "Type:", "Snake");
+	str += String.format("%-20s: %s\n", "Type", "Snake");
 	
 	return super.toString() + str;
     }
     
-    // getters and setters
-    
+    //getter
     public int getDamage() {
 	return damage;
     }
-
-
 }

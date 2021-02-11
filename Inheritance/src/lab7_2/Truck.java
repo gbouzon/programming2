@@ -25,7 +25,7 @@ package lab7_2;
 * Class defining a Truck object, child class of Vehicle.
 * @author Giuliana Bouzon
 */
-public class Truck extends Vehicle{
+public class Truck extends Vehicle {
     
     private double loadCapacity;
     private int towingCapacity;

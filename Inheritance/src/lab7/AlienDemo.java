@@ -22,7 +22,6 @@
 package lab7;
 
 /**
-*
 * @author Giuliana Bouzon
 */
 public class AlienDemo {
@@ -31,11 +30,12 @@ public class AlienDemo {
 	// TODO Auto-generated method stub
 	AlienPack aliens = new AlienPack(3);
 	
+	//creating Alien objects, testing addAliens()
 	aliens.addAliens(new OgreAlien(75, "Yatzee"), 0);
 	aliens.addAliens(new SnakeAlien(100, "Sssssski"), 1);
 	aliens.addAliens(new MarshmallowManAlien(30, "Mashymawo"), 2);
 
-	
+	//testing toString()
 	System.out.println(aliens);
     }
 }

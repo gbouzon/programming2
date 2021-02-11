@@ -59,5 +59,4 @@ public class MarshmallowManAlien extends Alien {
     public int getDamage() {
 	return damage;
     }
-
 }
