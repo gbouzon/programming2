@@ -35,7 +35,7 @@ Repository for projects, assignments and labs in programming 2 course.
     Package <i>lab5</i> contains exercises done in Niloufar's lab 5 (GPS, Waypoint). 
 </p>
 
-<p> 2. Assignment 1: <br>
+<p> 2. YiAssignment1: <br>
     Contains my solution for Yi's assignment 1 (Address, Student, number stuff).
 </p>
 
@@ -43,3 +43,13 @@ Repository for projects, assignments and labs in programming 2 course.
     Package <i>singleDimensionalArrays</i> contains exercises done during Yi's lab (Face, Face_enum). <br>
     Package <i>hotel</i> contains exercises done during Yi's lab (Clock, Lobby). <br>
 </p>
+
+# Week 4
+
+<p> 1. Inheritance: <br>
+    Package <b>lab6</b> contains exercises done in Niloufar's lab 6, Q1 (Payment project). <br>
+    Package <b>lab6_2</b> contains exercises done in Niloufar's lab 6, Q2 (Document project). <br>
+    Package <i>lab7</i> contains exercises done in Niloufar's lab 7, Q1 (Alien project). <br>
+    Package <i>lab7_2</i> contains exercises done in Niloufar's lab 7, Q2 (Vehicle project). 
+</p>
+
