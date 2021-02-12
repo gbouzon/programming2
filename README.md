@@ -53,3 +53,7 @@ Repository for projects, assignments and labs in programming 2 course.
     Package <b>lab7_2</b> contains exercises done in Niloufar's lab 7, Q2 (Vehicle project). 
 </p>
 
+<p> 2. YiArrayExercise: <br>
+    Package <b>multiDimensionalArrays</b> contains exercises done during Yi's lab (Arrays2d methods). <br>
+</p>
+
