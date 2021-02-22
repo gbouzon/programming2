@@ -57,3 +57,14 @@ Repository for projects, assignments and labs in programming 2 course.
     Package <b>multiDimensionalArrays</b> contains exercises done during Yi's lab (Arrays2d methods). <br>
 </p>
 
+# Week 5
+
+<p> 1. Arrays: <br>
+    Package <b>arraysExercise</b> contains exercises done in Niloufar's in-class activity (Lab 1 - equals()). <br>
+</p>
+
+<p> 2. NiloufarAssignment1: <br>
+    Package <b>robotAssignment1</b> contains my solution for Niloufar's Assignment 1 (Robot, RobotDemo, RobotRace). <br>
+</p>
+
+
