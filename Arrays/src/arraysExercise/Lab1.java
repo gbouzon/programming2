@@ -1,13 +1,38 @@
 package arraysExercise;
 
 import java.util.Arrays;
-import java.util.Scanner;
 /**
  * 
  * @author Giuliana Bouzon
  *
  */
 public class Lab1 {
+    
+    /**
+     * Checks if two arrays contain the same elements, even if the order is different.
+     * @param array1, the first input char array.
+     * @param array2, the second input char array.
+     * @return true if the two arrays contain the same elements. False if otherwise.
+     */
+    public static boolean equals(char[] array1, char[] array2) {
+	boolean sameFrequency = true;
+	int elemFrequency = 0;
+	int elemFrequency2 = 0;
+	
+	for (int i = 0; i < array1.length && sameFrequency; i++) {
+	    for (int j = 0; j < array1.length; j++)
+		if (array1[i] == array1[j])
+		    elemFrequency++;
+	    
+	    for (int j = 0; j < array1.length; j++)
+		if (array1[i] == array2[j])
+		    elemFrequency2++;
+	    
+	    if (elemFrequency != elemFrequency2)
+		sameFrequency = false;
+	}
+	return sameFrequency;
+    }
 	
     /**
      * Adds a specific value to each element of an array, directly modified
@@ -172,5 +197,9 @@ public class Lab1 {
 	//testing niloufar's lab exercises
 	int[] nums2 = {1,3,5,7,9,11,13,15,17};
 	System.out.println(Arrays.toString(reverseOrder(nums2)));
+	
+	char[] array1 = {'a', 'b', 'c'};
+        char[] array2 = {'b', 'c', 'a'};
+        System.out.println(equals(array1, array2));
     }
 }
