@@ -64,7 +64,7 @@ Repository for projects, assignments and labs in programming 2 course.
 </p>
 
 <p> 2. NiloufarAssignment1: <br>
-    Package <b>robotAssignment1</b> contains my solution for Niloufar's Assignment 1 (Robot, RobotDemo, RobotRace). <br>
+    Contains my solution for Niloufar's Assignment 1 (Robot, RobotDemo, RobotRace). <br>
 </p>
 
 
