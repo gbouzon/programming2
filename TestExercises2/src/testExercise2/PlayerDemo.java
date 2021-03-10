@@ -21,19 +21,19 @@
 
 package testExercise2;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
-* Class based on Niloufar's Self-Test Exercise II - Q3.
-* Using arraylists.
+* Demo class for Player.
+* Used arrays this time.
 * @author Giuliana Bouzon
 */
-public class Players {
+public class PlayerDemo {
     
     static Scanner scan = new Scanner(System.in);
-    static int[] validTypes = {1, 2, 3, 4, 5, 0};
+    static int[] validTypes = {1, 2, 3, 4, 5, 0}; //valid options in the retrieveUserOption() method
     
     /**
      * Checks if the option entered by the user is valid.
@@ -120,127 +120,140 @@ public class Players {
     }
     
     /**
-     * Adds a player to the players list and its correspondent score to the scores list.
-     * @param players, the input players list.
-     * @param scores, the input scores list.
-     * @param player, the input player to be added to the list.
-     * @param score, the input score to be added to the score list.
+     * Prints all the players in the array and their corresponding scores.
+     * @param players, the input Player array.
+     * @return the String to be printed.
      */
-    public static void addPlayer(ArrayList<String> players, ArrayList<Double> scores, String player, double score) {
-	if (players.contains(player))
-	    System.out.println("Player already exists.");
-	else if (players.size() == 10)
-	    System.out.println("List has reached its capacity.");
+    public static void printPlayers(Player[] players) {
+	String str = "";
+	if (players.length > 1)
+	    for (Player player : players)
+		str += player.toString() + "\n";
+	else
+	    System.out.println(players[0].toString());
 	
-	else {
-	    players.add(player);
-	    scores.add(score);
-	}
+	System.out.println(str);
     }
     
     /**
-     * Prints all the players in the list and their corresponding scores.
-     * @param players, the input players list.
-     * @param scores, the input scores list.
-     * @return the String to be printed.
+     * Lists all the players that have the specified score as a score.
+     * @param players, the input players array.
+     * @param playerScore, the specified score to be found.
+     * @return all the players that possess playerScore.
      */
-    public static void printPlayers(ArrayList<String> players, ArrayList<Double> scores) {
-	String str = "";
-	if (players.size() == 0 && scores.size() == 0)
-	    System.out.println("There are no players to display at the moment.");
-	for (int i = 0; i < players.size(); i++) {
-	    str += String.format("%s's %s: %.2f\n", players.get(i), "score", scores.get(i));   
-	}
-	System.out.print(str);
+    public static String getAllPlayersWithScore(Player[] players, double playerScore) {
+	String str = ""; 
+	for (Player player : players)
+	    if (player.getScore() == playerScore)
+		str += player.getName() + ", ";
+	
+	return (str + "have a score of " + playerScore);
     }
     
     /**
      * Lists the specified player and its corresponding score.
      * @param players, the input players list.
-     * @param scores, the input scores list.
-     * @param player, the specified player.
+     * @param name, the specified player name.
      * @return the player and its corresponding score.
      */
-    public static String getPlayerScore(ArrayList<String> players, ArrayList<Double> scores, String player) {
-	int position = 0;
-	if (players.contains(player)) {
-	    position = players.indexOf(player);
-	    return String.format("%s %s %.1f.", player, "has a score of", scores.get(position));
-	}
-	else
-	    return String.format("'%s' %s.", player, "does not exist");
+    public static String getPlayerScore(Player[] players, String name) {
+	for (Player player : players)
+	    if (player.getName().equalsIgnoreCase(name))
+		return String.format("%s %s %.1f.", player.getName(), "has a score of", player.getScore());
 	
+	return String.format("'%s' %s.", name, "does not exist");
     }
     
     /**
-     * Removes a player from the players list and its corresponding score from the scores list.
+     * Removes the player with the specified name from the list.
      * @param players, the input players list.
-     * @param scores, the input scores list.
-     * @param player, the specified player to be removed.
+     * @param name, the specified name to be looked for in the players list.
      */
-    public static void removePlayer(ArrayList<String> players, ArrayList<Double> scores, String player) {
-	if (players.contains(player)) {
-	    int position = players.indexOf(player);
-	    players.remove(player);
-	    scores.remove(position);
+    public static Player[] removePlayer(Player[] players, String name) {
+	Player[] playersCopy = new Player[players.length - 1];
+	int removed = 0;
+	
+	for (int i = 0; i < players.length; i++) {
+	    if (!players[i].getName().equalsIgnoreCase(name))
+		playersCopy[i - removed] = players[i];
+	    else
+		removed++;
 	}
-	else
-	    System.out.printf("'%s' %s.\n", player, "does not exist");
+	return playersCopy;
     }
     
     /**
-     * Lists all the players that have the specified score as a score.
-     * @param players, the input players list.
-     * @param scores, the input scores list.
-     * @param playerScore, the specified score to be found.
-     * @return all the players that possess playerScore.
+     * Adds the specified Player object to the players array.
+     * Checks if the list can still fit more elements (length <= 10)
+     * @param players, the Player array
+     * @param player, the specified Player object to be added
+     * @return, the Player array with the appended Player object.
      */
-    public static String getAllPlayersWithScore(ArrayList<String> players, ArrayList<Double> scores, double playerScore) {
-	String str = ""; 
-	if (scores.contains(playerScore))
-	    for (int i = 0; i < scores.size(); i++) 
-		if (scores.get(i) == playerScore)
-		   str += players.get(i) + ", ";
+    public static Player[] add(Player[] players, Player player) {
+	if (players.length < 10) {
+	    Player[] playersCopy = Arrays.copyOf(players, players.length + 1);
+	    playersCopy[playersCopy.length - 1] = player;
 	
-	return (str + "have a score of " + playerScore);
+	    return playersCopy;
+	}
+	else
+	    System.out.println("The list has reached its capacity. Erase a player before continuing.");
+	
+	return players;
     }
     
+    /**
+     * Checks if there is a player in the Player array with the specified name.
+     * @param players, the Player array.
+     * @param name, the specified name.
+     * @return true if it already exists. False otherwise.
+     */
+    public static boolean isEqual(Player[] players, String name) {
+	for (Player player2 : players)
+	    if (player2.getName().equalsIgnoreCase(name))
+		return true;
+	
+	return false;
+    }
 
     public static void main(String[] args) {
 	// TODO Auto-generated method stub
 	
-	ArrayList<String> players = new ArrayList<>(10);
-	ArrayList<Double> scores = new ArrayList<>(10);
+	Player[] players = new Player[0];
 
 	int userOption;
 	boolean userActive = true;
 	
 	try {
-	    while(userActive) {
+	    while(userActive) {	
 		userOption = retrieveUserOption();
 		switch(userOption) {
 	    	    case 1:
-	    		String player = retrievePlayer();
-	    		player = scan.nextLine();  //because Java scanners are trash 
-	    		double score = retrievePlayerScore();
-	    		addPlayer(players, scores, player, score);
+	    		String name = retrievePlayer();
+	    		name = scan.nextLine();  //because Java scanners are trash jkjk pls don't hate on me
+	    		if (!isEqual(players, name)) { //checking if name already exists
+	    		    double score = retrievePlayerScore();
+	    		    players = add(players, new Player(name, score));
+	    		}
+	    		else 
+	    		    System.out.println("Name already exists sob sob. Try something else.");	    		
 	    		break;
 	    	    case 2:
-	    		printPlayers(players, scores);
+	    		printPlayers(players);
 	    		break;
 	    	    case 3:
 	    		double score2 = retrievePlayerScore();
-	    		System.out.println(getAllPlayersWithScore(players, scores, score2));
+	    		System.out.println(getAllPlayersWithScore(players, score2));
 	    		break;
 	    	    case 4:
-	    		String player2 = retrievePlayer();
-	    		player2 = scan.nextLine();
-	    		removePlayer(players, scores, player2);
+	    		String name2 = retrievePlayer();
+	    		name2 = scan.nextLine();
+	    		players = removePlayer(players, name2);
 	    		break;
 	    	    case 5:
-	    		String player3 = retrievePlayer();
-	    		player3 = scan.nextLine();
-	    		System.out.println(getPlayerScore(players, scores, player3));
+	    		String name3 = retrievePlayer();
+	    		name3 = scan.nextLine();
+	    		System.out.println(getPlayerScore(players, name3));
 	    		break;
 	    	    default:
 	    		System.out.println("Exiting....");
@@ -249,9 +262,10 @@ public class Players {
 	    } 
 	}
 	
+	//prints stack trace to pinpoint where the problem is.
 	catch(Exception exception) {
-	    System.out.println("Error please check me ;("); 
-	    exception.printStackTrace(); //doing this to pinpoint error
+	    System.out.println("Error please check me ;(");
+	    exception.printStackTrace();
 	}
     }
 }
