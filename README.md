@@ -4,7 +4,8 @@ Repository for projects, assignments and labs in programming 2 course.
 
 ## Folders
 
-<p> 1. Arrays: <br>
+### 1. Arrays:
+<p>
     Package <b>arraysExercise</b> contains exercises done in Niloufar's lab 1 and 3 (2d arrays and square sum) and Yi's lab. <br>
     Package <b>lab2</b> contains exercises done in Niloufar's lab 2 (Airplane project). <br>
     Package <b>lab4</b> contains exercises done in Niloufar's lab 4 (Magic Squares). <br>
