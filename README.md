@@ -55,7 +55,7 @@ Repository for projects, assignments and labs in programming 2 course.
 ### 8. TestExercises2:
 
 <p>
-    Package <b>testExercises2</b> contains exercises done in Niloufar's Self-Test II - Q1, Q2, Q3, Q4. <br>
+    Package <b>testExercises2</b> contains exercises done in Niloufar's Self-Test II - Q1, Q2, Q3 (Players), Q4 (Player, PlayerDemo). <br>
 </p>
 
 ### 9. YiArrayExercise:
