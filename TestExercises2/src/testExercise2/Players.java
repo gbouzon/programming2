@@ -253,5 +253,8 @@ public class Players {
 	    System.out.println("Error please check me ;("); 
 	    exception.printStackTrace(); //doing this to pinpoint error
 	}
+	
+	//closing the scanner
+	scan.close();
     }
 }

@@ -267,5 +267,8 @@ public class PlayerDemo {
 	    System.out.println("Error please check me ;(");
 	    exception.printStackTrace();
 	}
+	
+	//closing the scanner
+	scan.close();
     }
 }
