@@ -132,7 +132,7 @@ public class RobotDemo {
 	    r.move(steps, gridSize); //moving the robot
 	    System.out.printf("%s: %s.\n", "Result", r); //printing out position after direction change and steps taken
 	}
-	System.out.println(); //skiping a line
+	System.out.println(); //skipping a line
 	closingMessage(r, turns); //winning message	
     }
 }
