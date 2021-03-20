@@ -25,9 +25,9 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
-* Class based on Niloufar's lab 10 - Q18.
-* @author Giuliana Bouzon
-*/
+ * Class based on Niloufar's lab 10 - Q18.
+ * @author Giuliana Bouzon
+ */
 public class DividesIntegers {
 
     public static void main(String[] args) {

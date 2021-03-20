@@ -22,9 +22,9 @@
 package lab10;
 
 /**
-* Class based on Niloufar's lab 10 - Q17.
-* @author Giuliana Bouzon
-*/
+ * Class based on Niloufar's lab 10 - Q17.
+ * @author Giuliana Bouzon
+ */
 public class DiskDriveNotReady extends Exception {
 
     //default constructor
