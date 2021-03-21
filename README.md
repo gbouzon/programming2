@@ -17,7 +17,7 @@ Repository for projects, assignments and labs in programming 2 course.
 
 <p> 
     Package <b>lab9</b> contains exercises done in Niloufar's lab 9 (lab 9 - Q9). <br>
-    Package <b>lab10</b> contains exercises done in Niloufar's lab 10 (Q16, Q17, Q18). 
+    Package <b>lab10</b> contains exercises done in Niloufar's lab 10 (Q16, Q17, Q18). <br>
     Package <b>lab11</b> contains exercises done in Niloufar's lab 11 (Q5 - Return Ratio). 
 </p>
 
