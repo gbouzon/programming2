@@ -31,37 +31,50 @@ Repository for projects, assignments and labs in programming 2 course.
     Package <b>lab7_2</b> contains exercises done in Niloufar's lab 7, Q2 (Vehicle project). 
 </p>
 
-### 4. NiloufarAssignment1: 
+### 4. InputOutputOperations: 
+
+<p> 
+    Package <b>lab15</b> contains exercises done in Niloufar's lab 15, Q9 - Q12. <br>
+    Package <b>lab16</b> contains exercises done in Niloufar's lab 16, Q6 - Q9. <br>
+</p>
+
+### 5. NiloufarAssignment1: 
 
 <p> 
     Contains my solution for Niloufar's Assignment 1 (Robot, RobotDemo, RobotRace). <br>
 </p>
 
-###  5. PReview: 
+### 6. NiloufarAssignment2: 
+
+<p> 
+    Contains my solution for Niloufar's Assignment 2 (Property (a, b, c) and Registration). <br>
+</p>
+
+###  7. PReview: 
 
 <p>
     Contains Point project from Niloufar's review powerpoint exercises. 
 </p>
 
-### 6. Review:
+### 8. Review:
 
 <p> 
     Contains review exercises from Niloufar's labs.
 </p>
 
-### 7. Review2-2:
+### 9. Review2-2:
 
 <p> 
     Contains Temperature project from Niloufar's review powerpoint exercises. 
 </p>
 
-### 8. TestExercises2:
+### 10. TestExercises2:
 
 <p>
     Package <b>testExercises2</b> contains exercises done in Niloufar's Self-Test II - Q1, Q2, Q3 (Players), Q4 (Player, PlayerDemo). <br>
 </p>
 
-### 9. YiArrayExercise:
+### 11. YiArrayExercise:
 
 <p> 
     Package <b>singleDimensionalArrays</b> contains exercises done during Yi's lab (Face, Face_enum). <br>
@@ -69,13 +82,13 @@ Repository for projects, assignments and labs in programming 2 course.
     Package <b>multiDimensionalArrays</b> contains exercises done during Yi's lab (Arrays2d methods).
 </p>
 
-### 10. YiAssignment1:
+### 12. YiAssignment1:
 
 <p>
     Contains my solution for Yi's assignment 1 (Address, Student, number stuff).
 </p>
 
-### 11. YiReview:
+### 13. YiReview:
 
 <p> 
     Contains control structures review exercises done in Yi's class.
