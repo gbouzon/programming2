@@ -35,19 +35,16 @@ import java.util.Scanner;
 */
 public class Lab16 {
     
+    //to be used throughout the class.
     static Scanner scan = new Scanner(System.in);
-    
+   
     /**
-     * Tests if a file exists.
-     * @param fileName, the input file name.
+     * Prompts the user to enter a file name.
+     * @return the entered String.
      */
-    public static void doesExist(String fileName) throws IOException {
-	File file = new File(fileName);
-	
-	if (file.exists())
-	    System.out.printf("%s '%s' %s.", "File", fileName, "does exist");
-	else
-	    System.out.printf("%s '%s' %s.", "File", fileName, "does not exist");
+    public static String retrieveFileName() {
+	System.out.print("Please enter the name of the file: ");
+	return scan.nextLine();
     }
     
     /**
@@ -60,16 +57,31 @@ public class Lab16 {
     }
     
     /**
-     * Prompts the user to enter a file name.
-     * @return the entered String.
+     * Prompts the user to enter an advice.
+     * @return the String entered.
      */
-    public static String retrieveFileName() {
-	System.out.print("Please enter the name of the file: ");
+    public static String retrieveAdvice() {
+	System.out.print("Please enter an advice: ");
 	return scan.nextLine();
     }
     
     /**
+     * Tests if a file exists.
+     * For Q6.
+     * @param fileName, the input file name.
+     */
+    public static void doesExist(String fileName) throws IOException {
+	File file = new File(fileName);
+	
+	if (file.exists())
+	    System.out.printf("%s '%s' %s.", "File", fileName, "does exist");
+	else
+	    System.out.printf("%s '%s' %s.", "File", fileName, "does not exist");
+    }
+    
+    /**
      * Deletes an existing file depending on the user's choice.
+     * For Q7.
      * @param fileName, the input file name (String).
      */
     public static void deleteFile(String fileName) throws IOException {	
@@ -90,10 +102,11 @@ public class Lab16 {
     
     /**
      * Removes extra blanks in a file.
+     * For Q8.
      * @param fileName, the input file.
      * @throws FileNotFoundException
      */
-    public static void removeExtraSpaces(String fileName) throws FileNotFoundException {
+    public static void removeExtraBlanks(String fileName) throws FileNotFoundException {
 	//generating a temporary file name 
 	String tempName = "temporary" + new Random().nextInt(10000);
 	
@@ -132,26 +145,57 @@ public class Lab16 {
   	
   	//closing files
   	scan.close();
-      	original.close();
-      	tempFile.delete();
+  	original.close();
+  	tempFile.delete();
       	
-      	System.out.println("Extra blanks successfully deleted.");
+  	System.out.println("Extra blanks successfully deleted.");
+    }
+    
+    /**
+     * Gives advice to the user and then takes an advice from the user.
+     * For Q9.
+     * @param fileName, the input file.
+     * @throws IOException
+     */
+    public static void giveAdvice(String fileName) throws IOException {
+	String advice = "";
+	Scanner input = null;
+	File advices = new File(fileName);
+	
+	if (advices.exists()) {
+	    input = new Scanner(advices);
+	    while (input.hasNext())
+		advice = input.nextLine();
+	    
+	    System.out.println("Your advice is: " + advice);
+	    input.close();
+	}
+	
+	PrintWriter writer = new PrintWriter(new FileOutputStream(advices, true));
+	writer.println(retrieveAdvice());
+	writer.close();
+	
+	System.out.println("Your advice has been successfully transcribed.");
     }
     
     
     public static void main(String[] args) {
 	try {
 	    //testing Q6
-	    //doesExist("boynames.txt");
+	    doesExist(retrieveFileName());
 	
 	    //testing Q7
-	    //deleteFile(retrieveFileName());
+	    deleteFile(retrieveFileName());
 	    
 	    //testing q8
-	    removeExtraSpaces(retrieveFileName());
+	    removeExtraBlanks(retrieveFileName());
+	    
+	    //testing q9
+	    giveAdvice(retrieveFileName());
 	}
 	catch (IOException exception) {
 	    System.out.println("Error with the file..");
+	    exception.printStackTrace();
 	}
     }
 }
